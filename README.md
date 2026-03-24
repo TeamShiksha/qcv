@@ -104,6 +104,28 @@ node ./bin/qcv.js examples/profile.md --dry-run
 npm test
 ```
 
+## Publishing to npm
+
+This repo is set up for trusted publishing from GitHub Actions.
+
+1. Create an npm account and enable 2FA on it.
+2. On npm, add `qcv` as a package you intend to publish from `TeamShiksha/qcv` using trusted publishing.
+3. Make sure the package name is still available:
+
+```bash
+npm view qcv
+```
+
+4. Bump the version in `package.json`.
+5. Create and push a Git tag like `v0.1.0`.
+6. GitHub Actions will run the publish workflow and release the package to npm.
+
+If you prefer a manual first publish, log in with `npm login` and run:
+
+```bash
+npm publish
+```
+
 ## Roadmap
 
 - Formalize the q.cv API contract

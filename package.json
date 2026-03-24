@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Generate a CV from markdown and bootstrap a q.cv account from the command line.",
   "type": "module",
+  "author": "Sunny R Gupta <sunnykrgupta@gmail.com>",
   "bin": {
     "qcv": "./bin/qcv.js"
   },
@@ -22,8 +23,18 @@
     "q.cv"
   ],
   "homepage": "https://q.cv",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamShiksha/qcv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TeamShiksha/qcv/issues"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "provenance": true
   }
 }
